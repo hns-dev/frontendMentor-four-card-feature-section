@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+// Primary Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+
+// Neutral Colors
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+
+// Font
+$font-size: 15px;
+$font-family: "Poppins";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family, sans-serif;
+  font-size: $font-size;
+  line-height: 1.6;
+  font-weight: 400;
+  background: $light-gray;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $grayish-blue;
+  padding: 4em 0 2em;
+
+  h3 {
+    font-size: 24px;
+    color: $dark-blue;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  .card-container {
+    text-align: left;
+    margin: 4.5em 0;
+
+    .card {
+      border-top: 4px solid $cyan;
+      border-radius: 6px;
+      padding: 1.5em;
+      //   box-shadow: 0 3px 20px rgba(76, 78, 97, 0.3);
+      box-shadow: 1px 11px 14px -5px rgba(84, 158, 242, 0.2);
+      margin-bottom: 1.5em;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &:nth-child(2) {
+        border-color: $red;
+      }
+      &:nth-child(3) {
+        border-color: $orange;
+      }
+      &:nth-child(4) {
+        border-color: $blue;
+      }
+
+      img {
+        align-self: flex-end;
+        margin-top: 2em;
+      }
+
+      h4 {
+        font-size: 19px;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.attribution a {
+  color: $blue;
+  text-decoration: none;
+}
+
+// Utilities
+.light-text {
+  font-weight: 200;
+}
+
+.bold-text {
+  font-weight: 600;
+  color: $dark-blue;
+}
