@@ -119,6 +119,13 @@ body {
 }
 
 // Media
+@media (max-width: 342px) {
+  .features {
+    h3 {
+      font-size: 19.5px;
+    }
+  }
+}
 
 @media (min-width: 1440px) {
   .container {

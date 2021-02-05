@@ -119,6 +119,12 @@ body {
   color: #4c4e61;
 }
 
+@media (max-width: 342px) {
+  .features h3 {
+    font-size: 19.5px;
+  }
+}
+
 @media (min-width: 1440px) {
   .container {
     max-width: 1100px;
